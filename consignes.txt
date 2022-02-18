@@ -1,0 +1,17 @@
+Sujet :
+
+Vous créerez un mini-site de 3 pages HTML avec une seule feuille de style : dont une page devra contenir un formulaire de contact. Votre site doit être valide W3C (validateur en ligne : http://validator.w3.org/ )
+Thème libre.
+Suggestion : vous pouvez créer votre CV version HTML : une page pour votre cursus, une page pour vos expériences professionnelles et une page de contact.
+
+
+
+Contraintes :
+
+Vos pages HTML devront être optimisées pour utiliser le moins de balise possible.
+Vos pages doivent respecter les principes du responsive design vus en séances de TP : dimensions relatives et au minimum une media-querie.
+Vos pages doivent toutes avoir un menu identique avec une mise en évidence de la page active.
+Chaque page doit contenir une balise <title> unique faisant écho à une balise <h1> dans le corps de page.
+Toutes les balises sont autorisées dans le cadre normal de leur utilisation prévu par le W3C, en tenant compte de la sémantique de votre code.
+Le positionnement flottant n’est autorisé que pour les images.
+
