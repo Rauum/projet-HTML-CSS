@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width-device-width, initial-scale-1" />
+  <link href="projethtml.css" rel="stylesheet">
+  <title>Essential bretagne</title>
+</head>
+
+<body>
+  <h1>Essential bretagne</h1>
+  <h2>L'histoire de la nourriture bretonne</h2>
+
+  <!--<a href="#menu" title="Ouvrir le menu" class="menuMobile">Menu</a>-->
+  <div class="burgerbuttom">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <ul class="menu">
+    <li>
+      <a href="index.html">Accueil</a>
+    </li>
+    <!--
+  -->
+    <li>
+      <a href="classiques.html">Les classiques</a>
+    </li>
+    <!--
+  -->
+    <li class="active">
+      <a href="contact.html">Contact</a>
+    </li>
+  </ul>
+
+  <h3>--- Nous contacter ---</h3>
+  <form method="post" class="contact">
+    <label for="nom">Nom*:</label><br />
+    <input type="text" name="nom" id="nom" required="required" /><br />
+    <label for="prenom">Pr&eacute;nom*:</label><br />
+    <input type="text" name="prenom" id="prenom" required="required" /><br />
+    <label for="email">Email*:</label><br />
+    <input type="email" name="email" id="email" required="required" /><br />
+    <label for="email">Téléphone*:</label><br />
+    <input type="number" name="phone" id="phone" required="required" /><br />
+    <br />
+    <br />
+    <label for="com">Commentaire:</label><br />
+    <textarea name="commentaire" id="com" cols="42" rows="7">Si vous avez un commentaire à faire</textarea><br />
+    * Champs obligatoires<br />
+    <input type="submit" value="Envoyer" />&nbsp;<input type="reset" value="Effacer" />
+  </form>
+
+</body>
+
+</html>

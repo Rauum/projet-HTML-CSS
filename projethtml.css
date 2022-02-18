@@ -1,0 +1,295 @@
+body{
+  background-color: white;
+  font: 1.2em "Fira Sans", serif;
+}
+
+h1{
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2{
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 0;
+  color: #759ec1;
+}
+
+h3 {
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.menu, .recettes{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.menu li{
+height: auto;
+width: 33%;
+text-align: center;
+list-style: none;
+padding: 20px 0px;
+}
+
+.active a{
+  border-bottom: solid 2px black;
+  font-weight: bold;
+}
+
+.recettes{
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.recettes li{
+  width: 24%;
+  position: relative;
+  list-style: none;
+}
+
+.recettes img{
+  display: block;
+  width: 100%;
+  height: 350px;
+  transition : width 0.15s linear, height 0.15s linear, padding 0.15s linear ;
+}
+
+.recettes img:hover{
+  width: 90%;
+  height: 315px;
+  padding : 5% 5%;
+  filter: blur(2px);
+}
+
+.recette{
+  text-align: justify;
+}
+
+.recettes h3{
+  margin: 0;
+  text-align: center;
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 20px;
+}
+
+.recettes h2{
+  text-align: center;
+  background: white;
+  padding: 6px;
+  width: 70%;
+  margin: -14% 15% 0 15%;
+  position: relative;
+  font: italic bold 1.2em "Fira Sans", serif;
+  color: #759ec1;
+}
+
+.recettes .informations {
+  text-align: center;
+}
+
+.contact {
+  width: 70%;
+  margin: 2% 15%;
+  border: solid 1px black;
+  padding: 3%;
+}
+
+.contact label{ 
+  font-size: 20px;
+}
+
+.contact input, .contact textarea {
+  width: 90%;
+  border : none;
+  border-bottom : solid 1px black;
+  margin : 1%;
+}
+
+.contact input[type=submit], .contact input[type=reset]{
+  width: 20%;
+  margin: 0% 40%;
+  background-color: #759ec1;
+  border: 2px solid #343552;
+  border-radius: 30px;
+  box-shadow: #343552 4px 4px 0 0;
+  color: #343552;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+    
+}
+
+.contact input[type=submit]:hover, .contact input[type=reset]:hover {
+  background-color: #fff;
+}
+
+.contact input[type=submit]:active, .contact input[type=reset]:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.classique {
+  display: flex;
+  width: 90%;
+  margin: 2% 5%;
+  text-align: justify;
+  border-bottom: solid 1px black;
+  padding-bottom: 2%;
+}
+
+.classique:last-child {
+  border-bottom: none;
+  padding-bottom: 0%;
+}
+
+.classique img {
+  width: 300px;
+  margin: 0% 2% 2% 2%;
+  height: 300px;
+}
+
+.classique h2 {
+  font-size: 30px;
+  color : white;
+  background-color: black;
+  width: 50%;
+  margin : 0% 25% 2%;
+}
+
+
+@media (max-width: 1200px) {
+
+  h1,h3{
+    font-size: 35px;
+  }
+
+  li a  {
+    font-size: 17px;
+  }
+
+  .recettes li{
+    width: 32%;
+  }
+
+    .recettes img {
+      height: 325px;
+  }
+
+  .recettes img:hover{
+    width: 90%;
+    height: 292px;
+    padding : 5% 5%;
+    filter: blur(2px);
+  }
+
+  .recettes h2 {
+    width: 60%;
+    margin: -20% 20% 0 20%;
+    font-size: 15px;
+}
+  .recettes h3 {
+    font-size: 17px;
+  }
+
+  .recettes .informations {
+    font-size: 14px;
+}
+  .classique img {
+    width: 250px;
+    height: 250px;
+  }
+
+  div {
+    font-size: 15px;
+  }
+
+  .classique h2 {
+    font-size: 25px;
+  }
+
+  .contact input[type=submit], .contact input[type=reset] {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  h1, h3{
+    font-size: 30px;
+  }
+  
+  li a  {
+    font-size: 15px;
+  }
+
+  .recettes li{
+    width: 48%;
+  }
+
+  .recettes img {
+    height: 300px;
+  }
+
+  .recettes img:hover{
+    width: 90%;
+    height: 270px;
+    padding : 5% 5%;
+    filter: blur(2px);
+  }
+  .recettes h2 {
+    width: 50%;
+    margin: -24% 0% 0 21%;
+    font-size: 12px;
+}
+  .recettes h3 {
+    font-size: 15px;
+  }
+
+  .recettes .informations {
+    font-size: 12px;
+  }
+
+  .classique img {
+    width: 200px;
+    height: 200px;
+  }
+
+  div {
+    font-size: 12px;
+  }
+
+  .classique h2 {
+    font-size: 20px;
+  }
+
+  .contact input[type=submit], .contact input[type=reset] {
+    font-size: 10px;
+  }
+}
